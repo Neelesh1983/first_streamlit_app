@@ -32,6 +32,7 @@ st.exception(RuntimeError("RuntimeError exception"))
 st.sidebar.title('This is sidebar')
 st.sidebar.button('click')
 
-with st.spinner('Wait for it...'): time.sleep(10)
+with st.spinner('Wait for it...'):
+    time.sleep(10)
     
 
