@@ -23,8 +23,8 @@ st.file_uploader('Upload a photo')
 st.color_picker('Choose your favorite color')
 st.balloons()
 st.progress(10)
-with st.spinner('Wait for it...'):
-    time.sleep(10)
+## with st.spinner('Wait for it...'):
+##   time.sleep(10)
     
 st.success("You did it !")
 st.error("Error")
