@@ -25,7 +25,7 @@ st.balloons()
 st.progress(10)
 st.success("You did it !")
 st.error("Error")
-st.warnig("Warning")
+st.warning("Warning")
 st.info("It's easy to build a streamlit app")
 st.exception(RuntimeError("RuntimeError exception"))
 ## sidebar, spinner, echo 
