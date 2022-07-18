@@ -31,7 +31,9 @@ st.error("Error")
 st.warning("Warning")
 st.info("It's easy to build a streamlit app")
 st.exception(RuntimeError("RuntimeError exception"))
+
 ## sidebar, spinner, echo 
+
 st.sidebar.title('This is sidebar')
 st.sidebar.button('click')
 
