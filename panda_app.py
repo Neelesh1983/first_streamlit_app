@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-st.title('My Neighbour's favourite daily')
+st.title('My Neighbours favourite daily')
 st.header('Breakfast Favourite')
 st.text('🥣 Omega 3 & Blueberry Oatmeal')
 st.text('🥗 Kale, Spinach & Rocket Smoothie')
