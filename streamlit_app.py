@@ -1,5 +1,12 @@
 import streamlit as st
 
+cont1 = st.container()
+cont1.title('this is container area')
+st.header('Breakfast Menu')
+st.text('Omega 3 & Blueberry Oatmeal')
+st.text('Kale, Spinach & Rocket Smoothie')
+st.text('Hard-Boiled Free-Range Egg')
+
 st.title ("this is the app title")
 st.header("this is the markdown")
 st.markdown("this is the header")
