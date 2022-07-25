@@ -11,4 +11,10 @@ my_fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/da
 my_fruit_list = my_fruit_list.set_index('Fruit')
 fruits_selected = st.multiselect('Pick some fruits:',list(my_fruit_list.index))
 Fruits_to_show = my_fruit_list.loc[fruits_selected]
+def paginate_dataframe(dataframe, page_size, page_num):
+    page_size = page_size
+    if page_size is None:
+        return None
+    offset = page_size*(page_num-1)
+    return dataframe[offset:offset + page_size]
 st.dataframe(Fruits_to_show)
