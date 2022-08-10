@@ -21,5 +21,6 @@ def paginate_dataframe(dataframe, page_size, page_num):
     return dataframe[offset:offset + page_size]
 st.dataframe(Fruits_to_show)
 
+streamlit.header("Fruityvice Fruit Advice!")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
