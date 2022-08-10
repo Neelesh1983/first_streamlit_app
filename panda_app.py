@@ -1,5 +1,7 @@
 import pandas as pd
 import streamlit as st
+import requests
+
 st.title('My Neighbours favourite daily')
 st.header('My Favourite Breakfast')
 st.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -18,3 +20,6 @@ def paginate_dataframe(dataframe, page_size, page_num):
     offset = page_size*(page_num-1)
     return dataframe[offset:offset + page_size]
 st.dataframe(Fruits_to_show)
+
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
