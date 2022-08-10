@@ -24,3 +24,7 @@ st.header("Fruityvice Fruit Advice!")
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 st.text(fruityvice_response.json())
+# The next line will display the list 
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
+# write your own comment - what does this do?
+st.dataframe(fruityvice_normalized)
