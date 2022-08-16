@@ -1,5 +1,5 @@
 import streamlit as st
-import snowflake-connector
+import snowflake.connector
 cont1 = st.container()
 cont1.title('this is container area')
 st.header('Breakfast Menu')
