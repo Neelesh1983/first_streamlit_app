@@ -49,7 +49,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select * from store")
 my_data_row = my_cur.fetchone()
 st.header("List of customers")
-st.dataframe(my_data_row, type=str)
+st.dataframe(my_data_row, dtype=str)
 
     
 
