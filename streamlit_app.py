@@ -46,7 +46,7 @@ st.sidebar.button('click')
 
 my_cnx = stc.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
-my_cur.execute("select * from store where s_store_name = 'able'")
+my_cur.execute("select * from store")
 my_data_row = my_cur.fetchone()
 st.header("List of customers")
 st.dataframe(my_data_row)
