@@ -1,5 +1,5 @@
 import streamlit as st
-import snowflake.connector
+import snowflake.connector as stc
 cont1 = st.container()
 cont1.title('this is container area')
 st.header('Breakfast Menu')
@@ -44,7 +44,7 @@ st.exception(RuntimeError("RuntimeError exception"))
 st.sidebar.title('This is sidebar')
 st.sidebar.button('click')
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cnx = stc.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_data_row = my_cur.fetchone()
